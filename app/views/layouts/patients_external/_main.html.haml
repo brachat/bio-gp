@@ -1,0 +1,11 @@
+
+.container
+  .row{:style => "padding:0;"}
+    .col-md-12{:style => "padding:0;"}
+      = render 'layouts/patients_external/menu'
+
+#back_ground_wrapper
+  .container{:style => "background-color:#f0ddbe;"}
+    .row
+      #main-container.col-md-12{:style => "padding:0;"}
+        = yield

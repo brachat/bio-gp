@@ -1,0 +1,19 @@
+%head
+  %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+  %title empower Retail Store
+  
+  %meta{name: "mobile-web-app-capable", content: "yes"}/
+  
+  %link{rel: "shortcut icon", sizes:"196x196", href:"/assets/empowericon.png"}
+  %link{rel: "apple-touch-icon", sizes:"76x76", href:"/assets/empowericon.png"}
+  %link{rel: "apple-touch-icon", sizes:"120x120", href:"/assets/empowericon.png"}
+  %link{rel: "apple-touch-icon", sizes:"152x152", href:"/assets/empowericon.png"}
+  
+  %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Sm'}"}
+  
+  = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => false
+  
+  = javascript_include_tag "application", "data-turbolinks-track" => false
+  = javascript_include_tag "modernizr"
+  
+  = csrf_meta_tags

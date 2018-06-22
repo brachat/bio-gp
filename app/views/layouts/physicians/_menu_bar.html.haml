@@ -1,0 +1,24 @@
+.row.visible-xs.visible-sm.hidden-md.hidden-lg
+
+  .col-md-12
+    = image_tag('puracap_logos2.png')
+
+  #mobile_nav_bar.col-xs-12
+    %ul.nav.nav-pills
+      %li
+        %a{:href => physicians_orders_path, :id => "order-mobile"}
+          Order
+
+      %li
+        %a{:href => physicians_orderhistories_path, :id => "order-history-mobile"}
+          Order History
+
+      %li
+        %a{:href => edit_physicians_physician_path(current_physicians_physician), :id => "settings-mobile"}
+          Account Settings
+
+      %li
+        = link_to destroy_physicians_physician_session_path, :method =>  "delete" do
+          Logout
+
+

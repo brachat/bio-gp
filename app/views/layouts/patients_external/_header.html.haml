@@ -1,0 +1,26 @@
+.container{:style => "background-color:#ffffff;"}
+  .row{:style => "margin:0;"}
+    .col-md-12{:style => "padding:0px 0px 0px 0px;"}
+      .col-xs-8.col-md-4
+        = image_tag('empower_black.png', :width => "100%", :style => "padding:5px 0px 5px 0px;vertical-align:middle;display:inline-block;") 
+      
+      .col-md-2
+        -#%a{:href => "https://www.facebook.com/", :target => "_blank"}
+          -#= image_tag('facebook_30x30white.png', :style => "vertical-align:middle;display:inline-block;")
+
+        -#%a{:href => "mailto:order@empower.com", :target => "_blank"}
+          -#= image_tag('mail_30x30white.png', :style => "vertical-align:middle;display:inline-block;")
+          
+    .col-md-12{:style => "margin:0;padding:0;"}
+      -# = image_tag('greenfieldShort.jpg', :style => "width:100%;")     
+
+.container{:style => "margin:0;padding:0;background-color:white;"}
+  = render 'layouts/patients_external/menu_bar'
+
+:CSS
+  .whitelink {
+    color:black;
+   }
+  a.whitelink:hover {
+    color:black;
+   }
